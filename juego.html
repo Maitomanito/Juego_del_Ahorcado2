@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Juego del Ahorcado</title>
+        <link rel="icon" href="./images/logo.gif">
+        <meta property="og:title" content="Juego de la Horca">
+        <meta property="og:type" content="photo">
+        <meta property="og:description" content="Juego clásico del Ahorcado">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/stilojuego.css">
+    </head>
+
+    <body>
+        <h1>Juego del Ahorcado</h1>
+        <canvas id="pantalla" width="960px" height="450px"> <!-- etiqueta del canvas con sus medidas en la pantalla -->
+            Tu navegador no soporta Canvas.
+        </canvas>
+        <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
+        <button class="boton" id="reset-game" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+        <button class="boton" id="volver-atras" onclick="location.href='./index.html'">Volver al inicio</button>
+    </body>
+
+    <footer>
+        <div class="copyright">
+            <p> &copy Copyright Maitomanito/Juego-del-ahorcado-2022</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Maitomanito" target="_blank"><img class="imgRedes" src="./images/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/josemauricioromeromoreno/" target="_blank"><img class="imgRedes" src="./images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+    </footer>
+
+    <script src="./js/cryptography.js"></script>
+    
+</html>

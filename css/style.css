@@ -1,0 +1,102 @@
+body{
+  background-color: rgb(236, 141, 219);  
+}
+
+#titulo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: rgb(107, 8, 77);
+}
+
+.imagen {
+    text-align: center;
+}
+
+.botonesinicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.iniciar-juego, .agregar-palabra{
+    padding: 15px;
+    background-color: rgb(228, 17, 172);
+    width: 30%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: 2px groove rgb(255, 255, 255);
+    border-radius: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.iniciar-juego {
+    margin-right: 2px;
+}
+
+.agregar-palabra {
+    margin-left: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(255, 255, 255);
+    color:rgb(19, 119, 191);
+}
+
+footer {
+    display: flex;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(15, 15, 15);
+    border-bottom: 1px solid rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.copyright {
+    margin: auto;
+    justify-content: center;
+}
+
+.redes {
+    margin: auto 6px;
+    justify-content: flex-end;
+}
+
+.imgRedes {
+    vertical-align: middle;
+    cursor: pointer;
+    width: 28px;
+    height: auto;
+}
+
+.imgRedes:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+
+    footer {
+    font-size: 10px;
+    }
+
+    .imgRedes {
+    width: 14px;
+    height: auto;
+    }
+
+}
